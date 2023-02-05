@@ -1,3 +1,7 @@
+.container{
+  width: 90% !important;
+  max-width: none;
+}
 .nav-a {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
