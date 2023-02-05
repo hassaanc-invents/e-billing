@@ -11,9 +11,6 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Local Link -->
     <link rel="stylesheet" href="/style/navigation.css">
-    <link rel="stylesheet" href="/style/main-slider.css">
-    <link rel="stylesheet" href="/style/whatsapp-button.css">
-    <link rel="stylesheet" href="/style/main-page-cards.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -61,41 +58,49 @@
         </div>
         <div class="row">
             <div class="col-sm-3">
-                <button class="btn btn-dark btn-block btn-outline-dark">Update MEPCO</button>
-            </div>
-            <div class="col-sm-3">
-                <button class="btn btn-dark btn-block btn-outline-dark disabled d">Update LESCO</button>
-            </div>
-            <div class="col-sm-3">
-                <button class="btn btn-dark btn-block btn-outline-dark disabled">Update PESCO</button>
-            </div>
-            <div class="col-sm-3">
-                <button class="btn btn-dark btn-block btn-outline-dark disabled">Update IESCO</button>
+                <button type="button" class="btn btn-dark btn-block btn-outline-dark" data-toggle="modal"
+                    data-target="#selectUpdateCompanies">
+                    Update Companies
+                </button>
             </div>
         </div>
-        <div class="row my-4">
-            <div class="col-sm-3">
-                <button class="btn btn-dark btn-block btn-outline-dark disabled">Update FESCO</button>
-            </div>
-            <div class="col-sm-3">
-                <button class="btn btn-dark btn-block btn-outline-dark disabled d">Update GEPCO</button>
-            </div>
-            <div class="col-sm-3">
-                <button class="btn btn-dark btn-block btn-outline-dark disabled">Update HESCO</button>
-            </div>
-            <div class="col-sm-3">
-                <button class="btn btn-dark btn-block btn-outline-dark disabled">Update QESCO</button>
+        <div class="modal fade" id="selectUpdateCompanies" tabindex="-1" role="dialog"
+            aria-labelledby="selectUpdateCompaniesLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="selectUpdateCompaniesLabel">Select Company to Update</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-group">
+                                <select class="form-control" name="" id="">
+                                    <option value="">Select</option>
+                                    <option value="">MEPCO</option>
+                                    <option value="" disabled>LESCO</option>
+                                    <option value="" disabled>TESCO</option>
+                                    <option value="" disabled>SEPCO</option>
+                                    <option value="" disabled>QESCO</option>
+                                    <option value="" disabled>HESCO</option>
+                                    <option value="" disabled>GEPCO</option>
+                                    <option value="" disabled>FESCO</option>
+                                    <option value="" disabled>IESCO</option>
+                                    <option value="" disabled>PESCO</option>
+                                    <option value="" disabled>LESCO</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <button class="btn btn-dark btn-block btn-outline-dark disabled">Update SEPCO</button>
-            </div>
-            <div class="col-sm-3">
-                <button class="btn btn-dark btn-block btn-outline-dark disabled d">Update TESCO</button>
-            </div>
-        </div>
-
         <div class="row px-2 mt-3 custom-scroll-bar" style="max-height: 480px; overflow-x:auto">
             <table class="table table-striped">
                 <thead class="thead-dark">
