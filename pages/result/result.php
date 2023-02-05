@@ -1,56 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E Billing | Check Your Bills of All Pakistani Services</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
-    <!-- Bootstrap Link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Local Link -->
     <link rel="stylesheet" href="/style/navigation.css">
     <link rel="stylesheet" href="/style/whatsapp-button.css">
-    <link rel="stylesheet" href="/style/main-page-cards.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <?php
+    include "./components/bootstrap/bootstrap-head.php";
+    include "./components/other-meta-links/meta-links.php";
+    ?>
 </head>
 
 <body>
+    
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
-        <div class="container">
-            <a class="navbar-brand nav-a" href="index.html">E Billing</a>
-            <div class="social-media order-lg-last">
-                <p class="mb-0 d-flex">
-                    <a href="#" class="d-flex align-items-center justify-content-center nav-a"><span
-                            class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-                    <a href="#" class="d-flex align-items-center justify-content-center nav-a"><span
-                            class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-                    <a href="#" class="d-flex align-items-center justify-content-center nav-a"><span
-                            class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-                    <a href="#" class="d-flex align-items-center justify-content-center nav-a"><span
-                            class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
-                </p>
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fa fa-bars"></span> Menu
-            </button>
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav ml-auto mr-md-3">
-                    <li class="nav-item active"><a href="#" class="nav-link nav-a">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link nav-a">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link nav-a">Work</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link nav-a">Blog</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link nav-a">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
+    <?php
+    include "./components/navigation/navigation.php";
+    ?>
 
     <div class="container">
         <div class="w-100 mt-5">
@@ -113,23 +80,16 @@
 
     <!--- Whatsapp Button -->
 
-    <div class="link-area">
-        <a href="https://www.youtube.com/channel/UCki4IDK86E6_pDtptmsslow" target="_blank" class="text-light">
-            <i class="fa fa-whatsapp my-float"></i>
-        </a>
-    </div>
-
+    <?php
+    include "./components/whatsapp-button/whatsapp-button.php";
+    ?>
 
     <!-- Bootstrap JavaScript Link -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+
+    <?php
+    include "./components/bootstrap/bootstrap-javascript-foot.php";
+    ?>
+
 </body>
 
 </html>
