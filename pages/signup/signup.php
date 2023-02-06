@@ -4,11 +4,11 @@
 <head>
   <title>E Billing | Check Your Bills of All Pakistani Services</title>
   <!-- Local Link -->
-  <link rel="stylesheet" href="/style/navigation.css">
-  <link rel="stylesheet" href="/style/login-signup-page.css">
+  <link rel="stylesheet" href="../../style/navigation.css">
+  <link rel="stylesheet" href="../../style/login-signup-page.css">
   <?php
-  include "./components/bootstrap/bootstrap-head.php";
-  include "./components/other-meta-links/meta-links.php";
+  include "../../components/bootstrap/bootstrap-head.php";
+  include "../../components/other-meta-links/meta-links.php";
   ?>
 </head>
 
@@ -16,7 +16,7 @@
   <!-- Navigation -->
 
   <?php
-  include "./components/navigation/navigation.php";
+  include "../../components/navigation/navigation.php";
   ?>
 
   <!-- Login Section -->
@@ -24,7 +24,7 @@
   <div class="container">
     <div class="card card-login mx-auto text-center bg-dark">
       <div class="card-header mx-auto bg-dark">
-        <span> <img src="/images/wapda/pakistan-wapda-logo.png" class="w-75" alt="Logo"> </span><br />
+        <span> <img src="../../images/wapda/pakistan-wapda-logo.png" class="w-75" alt="Logo"> </span><br />
         <span class="logo_title mt-5"> Signup Dashboard </span>
       </div>
       <div class="card-body">
@@ -49,7 +49,7 @@
   <!-- Bootstrap JavaScript Link -->
 
   <?php
-  include "./components/bootstrap/bootstrap-javascript-foot.php";
+  include "../../components/bootstrap/bootstrap-javascript-foot.php";
   ?>
   
   </body>
