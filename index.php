@@ -3,10 +3,10 @@
 <head>
   <title>E Billing | Check Your Bills of All Pakistani Services</title>
   <!-- Local Link -->
-  <link rel="stylesheet" href="/style/navigation.css">
-  <link rel="stylesheet" href="/style/main-slider.css">
-  <link rel="stylesheet" href="/style/whatsapp-button.css">
-  <link rel="stylesheet" href="/style/main-page-cards.css">
+  <link rel="stylesheet" href="./style/navigation.css">
+  <link rel="stylesheet" href="./style/main-slider.css">
+  <link rel="stylesheet" href="./style/whatsapp-button.css">
+  <link rel="stylesheet" href="./style/main-page-cards.css">
   <?php
   include "./components/bootstrap/bootstrap-head.php";
   include "./components/other-meta-links/meta-links.php";
