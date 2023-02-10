@@ -1,13 +1,4 @@
-
     <section class="container">
-        <div class="row py-4">
-            <div class="col-sm-9">
-                <h3>Welcome on Board Mr Hassaan</h3>
-            </div>
-            <div class="col-sm-3">
-                <button class="btn btn-dark btn-block btn-outline-dark">Logout</button>
-            </div>
-        </div>
         <div class="row">
             <div class="col-sm-3">
                 <button type="button" class="btn btn-dark btn-block btn-outline-dark" data-toggle="modal" data-target="#selectUpdateCompanies">
