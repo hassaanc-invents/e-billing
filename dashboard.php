@@ -22,8 +22,12 @@ check_login($conn);
     <?php
     include "./pages/dashboard/dashboard-frontend.php";
     ?>
+    <!-- Footer -->
+    <?php
+    include "./components/footer/footer.php";
+    ?>
     <!-- Bootstrap JavaScript Link -->
-     <?php
+    <?php
     include "./components/bootstrap/bootstrap-javascript-foot.php";
     ?>
 </body>
