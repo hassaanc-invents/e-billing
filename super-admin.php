@@ -22,6 +22,10 @@ check_login($conn);
     <?php
     include "./pages/super-admin/super-admin-frontend.php"
     ?>
+    <!-- Footer -->
+    <?php
+    include "./components/footer/footer.php";
+    ?>
     <!-- Bootstrap JavaScript Link -->
     <?php
     include "./components/bootstrap/bootstrap-javascript-foot.php";

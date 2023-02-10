@@ -23,6 +23,10 @@
     <?php
     include "./components/whatsapp-button/whatsapp-button.php";
     ?>
+    <!-- Footer -->
+    <?php
+    include "./components/footer/footer.php";
+    ?>
     <!-- Bootstrap JavaScript Link -->
     <?php
     include "./components/bootstrap/bootstrap-javascript-foot.php";

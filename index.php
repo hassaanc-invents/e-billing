@@ -30,7 +30,7 @@
         <h2 class="text-dark">Welcome to Ebilling</h2>
         <div class="row">
             <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
-                <form method="post" action="/pages/result/result.html">
+                <form method="post" action="result">
                     <div class="card p-4 mb-4 mainform">
                         <div class="card-body">
                             <div class="input-group input-group-lg">
@@ -84,6 +84,10 @@
     <!-- Cards Section -->
     <?php
     include "./components/main-page-cards/main-page-cards.php";
+    ?>
+    <!-- Footer Include -->
+    <?php
+    include "./components/footer/footer.php";
     ?>
     <!-- Bootstrap JavaScript Link -->
     <?php

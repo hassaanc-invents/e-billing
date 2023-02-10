@@ -19,7 +19,7 @@
       </button>
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto mr-md-3">
-          <li class="nav-item"><a href="#" class="nav-link nav-a">Home</a></li>
+          <li class="nav-item"><a href="index" class="nav-link nav-a">Home</a></li>
           <li class="nav-item"><a href="#" class="nav-link nav-a">About</a></li>
           <li class="nav-item"><a href="#" class="nav-link nav-a">Work</a></li>
           <li class="nav-item"><a href="#" class="nav-link nav-a">Blog</a></li>

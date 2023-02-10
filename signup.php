@@ -21,6 +21,10 @@ include "./destroy-session/destroy-session.php"
     <?php
     include "./pages/signup/signup-frontend.php"
     ?>
+    <!-- Footer -->
+    <?php
+    include "./components/footer/footer.php";
+    ?>
     <!-- Bootstrap JavaScript Link -->
     <?php
     include "./components/bootstrap/bootstrap-javascript-foot.php";
