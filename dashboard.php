@@ -4,6 +4,7 @@ check_login($conn);
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>E Billing | Check Your Bills of All Pakistani Services</title>
     <!-- Local Link -->
@@ -13,14 +14,29 @@ check_login($conn);
     include "./components/other-meta-links/meta-links.php";
     ?>
 </head>
+
 <body>
     <!-- Navigation -->
     <?php
     include "./components/navigation/navigation.php";
     ?>
+    <!-- Dashboard Header -->
+    <?php
+    include "./components/dashboard-header/dashboard-header.php"
+    ?>
     <!-- Dashboard Frontend -->
     <?php
-    include "./pages/dashboard/dashboard-frontend.php";
+    if ($_SESSION['logged_role'] == 1) {
+        // Simple Admin
+        include "./pages/dashboard/dashboard-frontend.php";
+    } else {
+        if ($_SESSION['logged_role'] == 2) {
+            // Super Admin
+            include "./pages/super-admin/super-admin-frontend.php";
+        } else {
+            echo "Sorry You are not Authroized";
+        }
+    }
     ?>
     <!-- Footer -->
     <?php
@@ -31,4 +47,5 @@ check_login($conn);
     include "./components/bootstrap/bootstrap-javascript-foot.php";
     ?>
 </body>
+
 </html>
