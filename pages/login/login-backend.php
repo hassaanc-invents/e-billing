@@ -11,11 +11,12 @@ if (isset($_POST['login-submit'])) {
     $checkSuperAdminQuery = "SELECT * FROM admin_information WHERE admin_email='{$loginEmail}' AND admin_password='{$userPassword}' AND isActive='2'";
     $runLoginQuery = mysqli_query($conn, $credentialquery) or die("Incorrect Email or Password");
     if (mysqli_num_rows($runLoginQuery) > 0) {
-        while ($userrow = mysqli_fetch_assoc($runLoginQuery)) {
+        while ($singleSimpleAdmin = mysqli_fetch_assoc($runLoginQuery)) {
             session_start();
-            $_SESSION['admin_id'] = $userrow['admin_id'];
-            $_SESSION['logged_username'] = $userrow['admin_email'];
-            $_SESSION['logged_role'] = $userrow['isActive'];
+            $_SESSION['admin_id'] = $singleSimpleAdmin['admin_id'];
+            $_SESSION['logged_username'] = $singleSimpleAdmin['admin_email'];
+            $_SESSION['logged_fullname'] = $singleSimpleAdmin['admin_name'];
+            $_SESSION['logged_role'] = $singleSimpleAdmin['isActive'];
             if (isset($_SESSION['logged_username'])) {
                 header("Location: $baseURL/dashboard");
             }
@@ -27,6 +28,7 @@ if (isset($_POST['login-submit'])) {
             session_start();
             $_SESSION['admin_id'] = $singleSuperAdmin['admin_id'];
             $_SESSION['logged_username'] = $singleSuperAdmin['admin_email'];
+            $_SESSION['logged_fullname'] = $singleSuperAdmin['admin_name'];
             $_SESSION['logged_role'] = $singleSuperAdmin['isActive'];
             if (isset($_SESSION['logged_username'])) {
                 header("Location: $baseURL/dashboard");
