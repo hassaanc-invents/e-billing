@@ -21,7 +21,7 @@ include "./destroy-session/destroy-session.php"
   ?>
   <!-- Login Frontend -->
   <?php
-  include "./pages/login/login-frontend.php";
+  include "./pages/login/login-frontend.html";
   ?>
   <!-- Footer -->
   <?php

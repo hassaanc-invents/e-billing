@@ -19,7 +19,7 @@ include "./destroy-session/destroy-session.php"
     ?>
     <!-- Markup -->
     <?php
-    include "./pages/signup/signup-frontend.php"
+    include "./pages/signup/signup-frontend.html"
     ?>
     <!-- Footer -->
     <?php
