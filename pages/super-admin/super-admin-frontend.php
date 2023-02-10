@@ -5,7 +5,7 @@
             <h3>Welcome on Board Mr Hassaan</h3>
         </div>
         <div class="col-sm-3">
-            <button class="btn btn-dark btn-block btn-outline-dark">Logout</button>
+            <a href="./logout/logout" class="btn btn-dark btn-block btn-outline-dark">Logout</a>
         </div>
     </div>
     <div class="row px-2 mt-3 custom-scroll-bar" style="max-height: 480px; overflow-x:auto">
