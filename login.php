@@ -1,3 +1,7 @@
+<?php
+// Logout if Already Logged
+include "./destroy-session/destroy-session.php"
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

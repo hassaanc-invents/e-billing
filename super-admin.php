@@ -1,3 +1,7 @@
+<?php
+include "./connection/connection.php";
+check_login($conn);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

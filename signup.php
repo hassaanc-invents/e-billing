@@ -1,3 +1,7 @@
+<?php
+// Logout if Already Logged
+include "./destroy-session/destroy-session.php"
+?>
 <head>
     <title>E Billing | Check Your Bills of All Pakistani Services</title>
     <!-- Local Link -->
