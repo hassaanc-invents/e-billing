@@ -1,78 +1,20 @@
-<section class="container">
-    <div class="container-fostrap">
-      <div>
-        <h2 class="heading mb-5">
-          Registered Companies
-        </h2>
-      </div>
-      <div class="content">
-        <div class="">
-          <div class="row">
-            <div class="col-xs-12 col-md-6 offset-sm-1 offset-md-0 col-sm-10 col-lg-4">
-              <div class="card">
-                <a class="img-card" href="/pages/mepco/mepco.html">
-                  <img
-                    src="https://1.bp.blogspot.com/-Bii3S69BdjQ/VtdOpIi4aoI/AAAAAAAABlk/F0z23Yr59f0/s640/cover.jpg" />
-                </a>
-                <div class="card-content">
-                  <h4 class="card-title">
-                    <a href="/pages/mepco/mepco.html"> MEPCO </a>
-                  </h4>
-                  <p class="">
-                    Multan Electric Power Company
-                  </p>
-                </div>
-                <div class="card-read-more">
-                  <a href="/pages/mepco/mepco.html" class="btn btn-link btn-block">
-                    Check Bill
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-md-6 offset-sm-1 offset-md-0 col-sm-10 col-lg-4">
-              <div class="card">
-                <a class="img-card" href="/pages/mepco/mepco.html">
-                  <img
-                    src="https://1.bp.blogspot.com/-Bii3S69BdjQ/VtdOpIi4aoI/AAAAAAAABlk/F0z23Yr59f0/s640/cover.jpg" />
-                </a>
-                <div class="card-content">
-                  <h4 class="card-title">
-                    <a href="/pages/mepco/mepco.html"> MEPCO </a>
-                  </h4>
-                  <p class="">
-                    Multan Electric Power Company
-                  </p>
-                </div>
-                <div class="card-read-more">
-                  <a href="/pages/mepco/mepco.html" class="btn btn-link btn-block">
-                    Check Bill
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-md-6 offset-sm-1 offset-md-0 col-sm-10 col-lg-4">
-              <div class="card">
-                <a class="img-card" href="/pages/mepco/mepco.html">
-                  <img
-                    src="https://1.bp.blogspot.com/-Bii3S69BdjQ/VtdOpIi4aoI/AAAAAAAABlk/F0z23Yr59f0/s640/cover.jpg" />
-                </a>
-                <div class="card-content">
-                  <h4 class="card-title">
-                    <a href="/pages/mepco/mepco.html"> MEPCO </a>
-                  </h4>
-                  <p class="">
-                    Multan Electric Power Company
-                  </p>
-                </div>
-                <div class="card-read-more">
-                  <a href="/pages/mepco/mepco.html" class="btn btn-link btn-block">
-                    Check Bill
-                  </a>
-                </div>
-              </div>
+<section class="" style="width: 90vw; margin: 0 auto;">
+  <h2 class="text-center my-4">All Listed Companies</h2>
+  <div class="row match-height mt-4">
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-content">
+          <img class="card-img-top img-fluid" src="https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/03/24185535/Online-Learning.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5>Mepco</h5>
+            <p class="card-text  mb-0">Multan Electric Power Company</p>
+            <span class="card-text">Elite Author</span>
+            <div class="card-btns d-flex justify-content-between mt-2">
+              <a href="mepco" class="btn btn-outline-primary waves-effect waves-light px-5">Check Bill</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
