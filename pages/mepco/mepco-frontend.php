@@ -7,7 +7,7 @@
             <h1 class="text-center">Water and Power Management</h1>
             <div class="row">
                 <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
-                    <form method="post" action="result">
+                    <form method="post" action="./pages/mepco/mepco-backend.php">
                         <div class="card p-4 mb-4 mainform">
                             <div class="card-body">
                                 <div class="input-group input-group-lg">
@@ -15,7 +15,7 @@
                                     <input type="text" name="reference" id="reference" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
                                 </div>
                                 <div class="col-sm-4 offset-sm-8">
-                                    <button type="submit" class="btn btn-success btn-block mt-4" id="checkBill">Check
+                                    <button type="submit" value="submit" name="submit" class="btn btn-success btn-block mt-4" id="checkBill">Check
                                         Bill</button>
                                 </div>
                             </div>
