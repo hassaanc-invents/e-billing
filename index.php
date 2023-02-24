@@ -3,15 +3,16 @@
 
 <head>
     <title>E Billing | Check Your Bills of All Pakistani Services</title>
+    <?php
+    include "./components/bootstrap/bootstrap-head.php";
+    include "./components/other-meta-links/meta-links.php";
+    ?>
     <!-- Local Link -->
     <link rel="stylesheet" href="./style/navigation.css">
     <link rel="stylesheet" href="./style/main-section.css">
     <link rel="stylesheet" href="./style/whatsapp-button.css">
     <link rel="stylesheet" href="./style/main-page-cards.css">
-    <?php
-    include "./components/bootstrap/bootstrap-head.php";
-    include "./components/other-meta-links/meta-links.php";
-    ?>
+
 </head>
 
 <body>
@@ -59,6 +60,10 @@
     <!-- Cards Section -->
     <?php
     include "./components/main-page-cards/main-page-cards.php";
+    ?>
+    <!-- Home Page Blog -->
+    <?php
+    include "./pages/home/home-page-frontend.php";
     ?>
     <!-- Footer Include -->
     <?php
