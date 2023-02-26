@@ -49,7 +49,7 @@
                     <div class="form-group">
                         <select class="form-control" name="main_page_id" id="" required>
                             <option value="">Select Page</option>
-                            <option value="001">Home</option>
+                            <option value="1">Home</option>
                         </select>
                     </div>
                 </div>

@@ -23,16 +23,12 @@ if (isset($_POST['addupdatemarkup'])) {
     array_push($pageTotalData, $_POST['page_title_data'], $_POST['page_discription'], $_POST['page_keywords'], $_POST['page_author']);
     $updatePageQuery = "UPDATE main_pages_meta_data SET page_title_data = '{$pageTotalData[0]}', page_description = '{$pageTotalData[1]}',page_keywords = '{$pageTotalData[2]}',page_author = '{$pageTotalData[3]}' WHERE page_id = '$updatedPageId'";
     $runUpdateQuery = mysqli_query($conn, $updatePageQuery);
-    function PageMetaMaker($title, $discription, $keywords, $author)
-    {
-        '<title>' . $title . '</title>
-        <meta name="description" content="' . $discription . '">
-        <meta name="keywords" content="' . $keywords . '">
-        <meta name="author" content="' . $author . '">';
-    }
-    $completeMarkupOfFile = $pageBasicStructure[0] . PageMetaMaker($pageTotalData[0], $pageTotalData[1], $pageTotalData[2], $pageTotalData[3]) . $pageMarkupData[3] . $pageBasicStructure[1] . $pageMarkupData[1] . $pageMarkupData[2] . $pageBasicStructure[2];
+    $completeMarkupOfFile = $pageBasicStructure[0] . '<title>' . $pageTotalData[0] . '</title>
+    <meta name="description" content="' . $pageTotalData[1] . '">
+    <meta name="keywords" content="' . $pageTotalData[2] . '">
+    <meta name="author" content="' . $pageTotalData[3] . '">' . $pageMarkupData[3] . $pageBasicStructure[1] . $pageMarkupData[1] . $pageMarkupData[2] . $pageBasicStructure[2];
     include "../../file-create-update/file-create-update.php";
-    if ($pageTotalData[4] != "") {
+    if ($pageMarkupData[0] != "") {
         CreateUpdateFile($completeMarkupOfFile,  $pageMarkupData[0], "../../");
     }
     header("Location: $baseURL/dashboard");
