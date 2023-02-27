@@ -30,7 +30,7 @@
     ?>
     <!-- Website About -->
     <div class="bg-dark-full">
-        <div class="container pt-3">
+        <div class="container p-4">
             <div class="row ">
                 <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
                     <form method="post" action="result">

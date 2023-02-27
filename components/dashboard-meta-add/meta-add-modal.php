@@ -7,12 +7,12 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="pages/dashboard/add-meta-data" method="post">
+            <form action="pages/dashboard/add-markup" method="post">
                 <div class="modal-body">
                     <div class="form-group">
-                        <select class="form-control" name="" id="" required>
+                        <select class="form-control" name="page_id" id="" required>
                             <option value="">Select</option>
-                            <option value="">MEPCO</option>
+                            <option value="1">MEPCO</option>
                             <option value="" disabled>LESCO</option>
                             <option value="" disabled>TESCO</option>
                             <option value="" disabled>SEPCO</option>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary" name="" value="allowed-meta">Save changes</button>
+                    <button type="submit" class="btn btn-primary" name="add-markup" value="meta-markup">Save changes</button>
                 </div>
             </form>
         </div>
