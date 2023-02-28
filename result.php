@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
     <title>E Billing | Check Your Bills of All Pakistani Services</title>
     <!-- Local Link -->
