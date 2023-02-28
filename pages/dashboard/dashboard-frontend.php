@@ -1,7 +1,7 @@
     <?php
     include "./components/dashboard-meta-add/meta-add-modal.php";
     ?>
-    <section class="container">
+    <section class="container" style="height: calc(100vh - 250px); overflow-x:auto">
         <div class="row">
             <div class="col-sm-3">
                 <button type="button" class="btn btn-dark btn-block btn-outline-dark" data-toggle="modal" data-target="#selectUpdateCompanies">
