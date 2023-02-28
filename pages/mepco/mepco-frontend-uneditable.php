@@ -3,7 +3,7 @@
             <center>
                 <img src="./images/wapda/pakistan-wapda-logo.png" alt="Pakistan Wapda Logo">
             </center>
-            <h1 class="text-center">Water and Power Management</h1>
+            <h1 class="text-center">Multan Electric Power Company</h1>
             <div class="row">
                 <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
                     <form method="post" action="./pages/mepco/mepco-backend.php">
