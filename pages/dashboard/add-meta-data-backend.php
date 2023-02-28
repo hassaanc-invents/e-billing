@@ -17,7 +17,7 @@ if (isset($_POST['addupdatemarkup'])) {
     }
     if (mysqli_num_rows($runGetBasicPageMarkupStruct) > 0) {
         while ($singleBasicStructure = mysqli_fetch_assoc($runGetBasicPageMarkupStruct)) {
-            array_push($pageBasicStructure, $singleBasicStructure['meta_data_before_head_tags'], $singleBasicStructure['meta_data_after_head_tags'], $singleBasicStructure['page_closure_data']);
+            array_push($pageBasicStructure, $singleBasicStructure['meta_data_before_head_tags'], $singleBasicStructure['bootstrap_inclusion_head_tags'], $singleBasicStructure['meta_data_after_head_tags'], $singleBasicStructure['page_closure_data']);
         }
     }
     array_push($pageTotalData, $_POST['page_title_data'], $_POST['page_discription'], $_POST['page_keywords'], $_POST['page_author']);
@@ -26,7 +26,7 @@ if (isset($_POST['addupdatemarkup'])) {
     $completeMarkupOfFile = $pageBasicStructure[0] . '<title>' . $pageTotalData[0] . '</title>
     <meta name="description" content="' . $pageTotalData[1] . '">
     <meta name="keywords" content="' . $pageTotalData[2] . '">
-    <meta name="author" content="' . $pageTotalData[3] . '">' . $pageMarkupData[3] . $pageBasicStructure[1] . $pageMarkupData[1] . $pageMarkupData[2] . $pageBasicStructure[2];
+    <meta name="author" content="' . $pageTotalData[3] . '">'. $pageBasicStructure[1] . $pageMarkupData[3] . $pageBasicStructure[2] . $pageMarkupData[1] . $pageMarkupData[2] . $pageBasicStructure[3];
     include "../../file-create-update/file-create-update.php";
     if ($pageMarkupData[0] != "") {
         CreateUpdateFile($completeMarkupOfFile,  $pageMarkupData[0], "../../");

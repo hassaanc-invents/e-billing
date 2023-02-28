@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./style/main-section.css">
     <link rel="stylesheet" href="./style/whatsapp-button.css">
     <link rel="stylesheet" href="./style/main-page-cards.css">
-
 </head>
 
 <body>
@@ -20,13 +19,13 @@
     <?php
     include "./components/navigation/navigation.php";
     ?>
-    <!-- Main Section -->
-    <?php
-    include "./components/main-home-section/main-home-section.php";
-    ?>
     <!--- Whatsapp Button -->
     <?php
     include "./components/whatsapp-button/whatsapp-button.php";
+    ?>
+    <!-- Main Section -->
+    <?php
+    include "./components/main-home-section/main-home-section.php";
     ?>
     <!-- Website About -->
     <div class="bg-dark-full">
