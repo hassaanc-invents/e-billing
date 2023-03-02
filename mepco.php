@@ -15,10 +15,15 @@
     <?php
     include "./components/navigation/navigation.php";
     ?>
+        <?php
+    include "./pages/mepco/mepco-frontend-uneditable.php";
+    ?>
     <!-- Mepco Frontend -->
+    <div class="container">
     <?php
     include "./pages/mepco/mepco-frontend.php";
     ?>
+    </div>
     <!--- Whatsapp Button -->
     <?php
     include "./components/whatsapp-button/whatsapp-button.php";
