@@ -1,7 +1,7 @@
 <div class="container">
 <div class="w-100">
             <center>
-                <img src="./images/wapda/pakistan-wapda-logo.png" alt="Pakistan Wapda Logo">
+                <img src="./images/wapda/mepco/mepco.webp" class="my-5 w-25 h-auto" alt="Multan Electric Power Company">
             </center>
             <h1 class="text-center">Multan Electric Power Company</h1>
             <div class="row">
@@ -14,7 +14,7 @@
                                     <input type="text" name="reference" id="reference" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
                                 </div>
                                 <div class="col-sm-4 offset-sm-8">
-                                    <button type="submit" value="submit" name="submit" class="btn btn-success btn-block mt-4" id="checkBill">Check
+                                    <button type="submit" value="submit" name="submit" class="btn btn-success btn-block mt-4 px-2" id="checkBill">Check
                                         Bill</button>
                                 </div>
                             </div>
