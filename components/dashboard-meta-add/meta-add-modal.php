@@ -50,6 +50,8 @@
                         <select class="form-control" name="main_page_id" id="" required>
                             <option value="">Select Page</option>
                             <option value="1">Home</option>
+                            <option value="2">Mepco</option>
+                            <option value="3">Result</option>
                         </select>
                     </div>
                 </div>
