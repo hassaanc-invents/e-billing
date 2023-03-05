@@ -12,7 +12,8 @@
                     <div class="form-group">
                         <select class="form-control" name="page_id" id="" required>
                             <option value="">Select</option>
-                            <option value="1">MEPCO</option>
+                            <option value="1">Home</option>
+                            <option value="2">MEPCO</option>
                             <option value="" disabled>LESCO</option>
                             <option value="" disabled>TESCO</option>
                             <option value="" disabled>SEPCO</option>
@@ -50,6 +51,8 @@
                         <select class="form-control" name="main_page_id" id="" required>
                             <option value="">Select Page</option>
                             <option value="1">Home</option>
+                            <option value="2">Mepco</option>
+                            <option value="3">Result</option>
                         </select>
                     </div>
                 </div>

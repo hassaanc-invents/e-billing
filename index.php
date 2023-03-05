@@ -3,6 +3,7 @@
 
 <head>
     <title>E Billing | Check Your Bills of All Pakistani Services</title>
+    <link rel="shortcut icon" href="./images/wapda/ebillpk-logo.png" type="image/x-icon">
     <?php
     include "./components/bootstrap/bootstrap-head.php";
     include "./components/other-meta-links/meta-links.php";
@@ -10,7 +11,6 @@
     <!-- Local Link -->
     <link rel="stylesheet" href="./style/navigation.css">
     <link rel="stylesheet" href="./style/main-section.css">
-    <link rel="stylesheet" href="./style/whatsapp-button.css">
     <link rel="stylesheet" href="./style/main-page-cards.css">
 </head>
 
@@ -27,47 +27,31 @@
     <?php
     include "./components/main-home-section/main-home-section.php";
     ?>
-    <!-- Website About -->
-    <div class="bg-dark-full">
-        <div class="container p-4">
-            <div class="row ">
-                <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
-                    <form method="post" action="result">
-                        <div class="card mainform">
-                            <div class="card-body">
-                                <div class="input-group input-group-lg">
-                                    <span class="input-group-text" id="inputGroup-sizing-lg">Reference #</span>
-                                    <input type="text" name="reference" id="reference" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-                                </div>
-                                <div class="input-group input-group-lg mt-4">
-                                    <select name="" id="" cl class="form-control">
-                                        <option value="">Select Company</option>
-                                        <option value="">Mepco</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-4 offset-sm-8">
-                                    <button type="submit" class="btn btn-success btn-block mt-4" id="checkBill">Check
-                                        Bill</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Global Form -->
+    <?php
+    include "./components/global-form/main-global-form-frontend.html";
+    ?>
     <!-- Cards Section -->
     <?php
     include "./components/main-page-cards/main-page-cards.php";
     ?>
     <!-- Home Page Blog -->
+    <div class="container">
     <?php
     include "./pages/home/home-page-frontend.php";
     ?>
+    </div>
     <!-- Footer Include -->
     <?php
     include "./components/footer/footer.php";
     ?>
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('global-search-form').globalCompanySelect.onchange = function() {
+            var newaction = this.value;
+            document.getElementById('global-search-form').action = newaction;
+        };
+    </script>
     <!-- Bootstrap JavaScript Link -->
     <?php
     include "./components/bootstrap/bootstrap-javascript-foot.php";

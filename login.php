@@ -6,6 +6,7 @@ include "./destroy-session/destroy-session.php"
 <html lang="en">
 <head>
   <title>E Billing | Check Your Bills of All Pakistani Services</title>
+  <link rel="shortcut icon" href="./images/wapda/ebillpk-logo.png" type="image/x-icon">
   <!-- Local Link -->
   <link rel="stylesheet" href="./style/navigation.css">
   <link rel="stylesheet" href="./style/login-signup-page.css">
