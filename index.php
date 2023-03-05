@@ -36,9 +36,11 @@
     include "./components/main-page-cards/main-page-cards.php";
     ?>
     <!-- Home Page Blog -->
+    <div class="container">
     <?php
     include "./pages/home/home-page-frontend.php";
     ?>
+    </div>
     <!-- Footer Include -->
     <?php
     include "./components/footer/footer.php";
