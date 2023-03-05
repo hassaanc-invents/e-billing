@@ -7,6 +7,7 @@ check_login($conn);
 
 <head>
     <title>E Billing | Check Your Bills of All Pakistani Services</title>
+    <link rel="shortcut icon" href="./images/wapda/ebillpk-logo.png" type="image/x-icon">
     <!-- Local Link -->
     <link rel="stylesheet" href="./style/navigation.css">
     <?php

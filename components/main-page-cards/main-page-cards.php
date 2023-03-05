@@ -5,7 +5,7 @@
       <div class="card">
         <div class="card-content">
           <center>
-          <img class="w-75 h-auto" src="./images/wapda/mepco/mepco.webp" alt="Multan Electric Power Company">
+          <img class="mt-2" src="./images/wapda/mepco-logo.png" style="width: 60%; height: auto" alt="Multan Electric Power Company">
           </center>
           <div class="card-body">
             <h5>Mepco</h5>

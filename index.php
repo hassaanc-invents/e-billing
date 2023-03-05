@@ -3,6 +3,7 @@
 
 <head>
     <title>E Billing | Check Your Bills of All Pakistani Services</title>
+    <link rel="shortcut icon" href="./images/wapda/ebillpk-logo.png" type="image/x-icon">
     <?php
     include "./components/bootstrap/bootstrap-head.php";
     include "./components/other-meta-links/meta-links.php";
@@ -10,7 +11,6 @@
     <!-- Local Link -->
     <link rel="stylesheet" href="./style/navigation.css">
     <link rel="stylesheet" href="./style/main-section.css">
-    <link rel="stylesheet" href="./style/whatsapp-button.css">
     <link rel="stylesheet" href="./style/main-page-cards.css">
 </head>
 
@@ -44,7 +44,12 @@
     include "./components/footer/footer.php";
     ?>
     <!-- JavaScript -->
-    <script src="./javascript/home/home.js"></script>
+    <script>
+        document.getElementById('global-search-form').globalCompanySelect.onchange = function() {
+            var newaction = this.value;
+            document.getElementById('global-search-form').action = newaction;
+        };
+    </script>
     <!-- Bootstrap JavaScript Link -->
     <?php
     include "./components/bootstrap/bootstrap-javascript-foot.php";
