@@ -2,13 +2,13 @@
 include "../../connection/connection.php";
 if (isset($_POST['add-markup'])) {
     session_start();
-    $pageCompleteData = array();
+    $pageCompleteData = "";
     $getDataFromPageId = $_POST['page_id'];
-    $getPageDataBackendQuery = "SELECT * FROM sub_pages_frontend WHERE sub_page_id='{$getDataFromPageId}'";
+    $getPageDataBackendQuery = "SELECT page_markup FROM all_pages_markup_data WHERE page_id='{$getDataFromPageId}'";
     $runPageDataBackendQuery = mysqli_query($conn, $getPageDataBackendQuery) or die("Cant Extract Data");
     if (mysqli_num_rows($runPageDataBackendQuery) > 0) {
         while ($singlePageData = mysqli_fetch_assoc($runPageDataBackendQuery)) {
-            array_push($pageCompleteData, $singlePageData['file_path_to_edit'], $singlePageData['sub_page_markup']);
+            $pageCompleteData = $singlePageData['page_markup'];
         }
     }
 ?>
@@ -23,7 +23,6 @@ if (isset($_POST['add-markup'])) {
         ?>
         <!-- Local Link -->
         <link rel="stylesheet" href="../../style/navigation.css">
-        <!-- <link rel="stylesheet" href="../../style/add-meta-section.css"> -->
     </head>
 
     <body>
@@ -40,7 +39,7 @@ if (isset($_POST['add-markup'])) {
 
                 <div class="form-group">
                     <label for="markup_data">Add Markup Data</label>
-                    <textarea name="markup_data" id="markup_data" class="form-control" rows="25"><?php echo $pageCompleteData[1]?></textarea>
+                    <textarea name="markup_data" id="markup_data" class="form-control" rows="25"><?php echo $pageCompleteData?></textarea>
                 </div>
                 <!-- Submit Button -->
                 <div class="row">

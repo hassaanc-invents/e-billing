@@ -2,6 +2,30 @@
   width: 90% !important;
   max-width: none;
 }
+/* For Dashboard */
+.content-holder{
+  padding: 22vh 0;
+}
+/* For Index */
+.pad40-30 {
+  padding: 40px 30px 10px 30px;
+}
+.bg-dark-full {
+  background-color: #080808 !important;
+}
+.cards img{
+  border-radius: 0 30px 0 30px;
+}
+.cards img:hover{
+  transform: scale(1.1);
+}
+.cards button{
+  background-color: transparent;
+}
+.cards button:hover{
+color:blue;
+}
+/* Index End */
 .nav-a {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;

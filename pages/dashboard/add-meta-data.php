@@ -4,11 +4,11 @@ if (isset($_POST['add-meta'])) {
     session_start();
     $pageCompleteData = array();
     $getDataFromPageId = $_POST['main_page_id'];
-    $getPageDataBackendQuery = "SELECT * FROM main_pages_meta_data WHERE page_id='{$getDataFromPageId}'";
+    $getPageDataBackendQuery = "SELECT * FROM all_pages_markup_data WHERE page_id='{$getDataFromPageId}'";
     $runPageDataBackendQuery = mysqli_query($conn, $getPageDataBackendQuery) or die("Cant Extract Data");
     if (mysqli_num_rows($runPageDataBackendQuery) > 0) {
         while ($singlePageData = mysqli_fetch_assoc($runPageDataBackendQuery)) {
-            array_push($pageCompleteData, $singlePageData['page_title_data'], $singlePageData['page_description'], $singlePageData['page_keywords'], $singlePageData['page_author'], $singlePageData['page_name']);
+            array_push($pageCompleteData, $singlePageData['page_title_data'], $singlePageData['page_description'], $singlePageData['page_keywords'], $singlePageData['page_author'], $singlePageData['page_name'], $singlePageData['image_alt_tag']);
         }
     }
 ?>
@@ -23,7 +23,6 @@ if (isset($_POST['add-meta'])) {
         ?>
         <!-- Local Link -->
         <link rel="stylesheet" href="../../style/navigation.css">
-        <link rel="stylesheet" href="../../style/add-meta-section.css">
     </head>
 
     <body>
@@ -57,6 +56,10 @@ if (isset($_POST['add-meta'])) {
                         <input type="text" name="page_author" id="site-author" class="form-control" value="<?php echo $pageCompleteData[3] ?>">
                     </div>
                     <input hidden type="text" name="page_name" id="site-name" class="form-control" value="<?php echo $pageCompleteData[4] ?>">
+                    <div class="form-group col-sm-6">
+                        <label for="site-alt">Image Alt Text</label>
+                        <input type="text" name="image_alt_tag" id="site-alt" class="form-control" value="<?php echo $pageCompleteData[5] ?>">
+                    </div>
                 </div>
                 <!-- Submit Button -->
                 <div class="row">

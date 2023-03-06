@@ -1,6 +1,8 @@
 <?php
 // Logout if Already Logged
-include "./destroy-session/destroy-session.php"
+include "./destroy-session/destroy-session.php";
+include "./connection/connection.php";
+include "./web-crawler/web-crawler.php";
 ?>
 <head>
     <title>E Billing | Check Your Bills of All Pakistani Services</title>
