@@ -1,19 +1,30 @@
+<?php
+include "./connection/connection.php";
+include "./get-page-data/get-page-data.php";
+include "./web-crawler/web-crawler.php";
+$pageId = "001";
+$totalPageData =  GetPageData($conn, $pageId);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>E Billing | Check Your Bills of All Pakistani Services</title>
+    <?php
+    include "./components/other-meta-links/meta-links.php";
+    ?>
+    <meta name="description" content="<?php echo $totalPageData[1]; ?>">
+    <meta name="keywords" content="<?php echo $totalPageData[2]; ?>">
+    <meta name="author" content="<?php echo $totalPageData[3]; ?>">
+    <title><?php echo $totalPageData[0]; ?></title>
     <link rel="shortcut icon" href="./images/wapda/ebillpk-logo.png" type="image/x-icon">
     <?php
     include "./components/bootstrap/bootstrap-head.php";
-    include "./components/other-meta-links/meta-links.php";
     ?>
     <!-- Local Link -->
     <link rel="stylesheet" href="./style/navigation.css">
     <link rel="stylesheet" href="./style/main-section.css">
     <link rel="stylesheet" href="./style/main-page-cards.css">
 </head>
-
 <body>
     <!-- Navigation -->
     <?php
@@ -32,14 +43,33 @@
     include "./components/global-form/main-global-form-frontend.html";
     ?>
     <!-- Cards Section -->
-    <?php
-    include "./components/main-page-cards/main-page-cards.php";
-    ?>
+    <section class="container">
+        <h2 class="text-center my-4">All Listed Companies</h2>
+        <div class="row match-height mt-4">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card">
+                    <div class="card-content">
+                        <center>
+                            <img class="mt-2" src="./images/wapda/mepco-logo.png" style="width: 60%; height: auto" alt="<?php echo $totalPageData[4]; ?>">
+                        </center>
+                        <div class="card-body">
+                            <h5>Mepco</h5>
+                            <p class="card-text  mb-0">Multan Electric Power Company</p>
+                            <span class="card-text">Punjab, Pakistan</span>
+                            <div class="card-btns d-flex justify-content-end mt-2">
+                                <a href="mepco" class="btn btn-dark waves-effect waves-light px-5">Check Bill</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Home Page Blog -->
     <div class="container">
-    <?php
-    include "./pages/home/home-page-frontend.php";
-    ?>
+        <?php
+        echo $totalPageData[5];
+        ?>
     </div>
     <!-- Footer Include -->
     <?php

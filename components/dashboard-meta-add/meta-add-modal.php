@@ -1,3 +1,18 @@
+<?php
+// Backend For Getting Modal Dropdown
+$getPagesDataQuery = "SELECT * FROM all_pages_markup_data";
+$runPagesDataQuery = mysqli_query($conn, $getPagesDataQuery) or die("Pages Fetch Error");
+$pagesData = array();
+if (mysqli_num_rows($runPagesDataQuery) > 0) {
+    while ($singlePageData = mysqli_fetch_assoc($runPagesDataQuery)) {
+        array_push($pagesData, [
+            $singlePageData['page_id'],
+            $singlePageData['page_name']
+        ]);
+    }
+}
+?>
+
 <div class="modal fade" id="selectUpdateCompanies" tabindex="-1" role="dialog" aria-labelledby="selectUpdateCompaniesLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -12,18 +27,13 @@
                     <div class="form-group">
                         <select class="form-control" name="page_id" id="" required>
                             <option value="">Select</option>
-                            <option value="1">Home</option>
-                            <option value="2">MEPCO</option>
-                            <option value="" disabled>LESCO</option>
-                            <option value="" disabled>TESCO</option>
-                            <option value="" disabled>SEPCO</option>
-                            <option value="" disabled>QESCO</option>
-                            <option value="" disabled>HESCO</option>
-                            <option value="" disabled>GEPCO</option>
-                            <option value="" disabled>FESCO</option>
-                            <option value="" disabled>IESCO</option>
-                            <option value="" disabled>PESCO</option>
-                            <option value="" disabled>LESCO</option>
+                            <?php
+                            foreach ($pagesData as $singlePage) {
+                            ?>
+                                <option value="<?php echo $singlePage[0]; ?>"><?php echo $singlePage[1]; ?></option>
+                            <?php
+                            }
+                            ?>
                         </select>
                     </div>
                 </div>
@@ -50,9 +60,13 @@
                     <div class="form-group">
                         <select class="form-control" name="main_page_id" id="" required>
                             <option value="">Select Page</option>
-                            <option value="1">Home</option>
-                            <option value="2">Mepco</option>
-                            <option value="3">Result</option>
+                            <?php
+                            foreach ($pagesData as $singlePage) {
+                            ?>
+                                <option value="<?php echo $singlePage[0]; ?>"><?php echo $singlePage[1]; ?></option>
+                            <?php
+                            }
+                            ?>
                         </select>
                     </div>
                 </div>

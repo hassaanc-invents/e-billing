@@ -1,5 +1,10 @@
+<?php
+include "./connection/connection.php";
+include "./web-crawler/web-crawler.php";
+?>
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>E Billing | Check Your Bills of All Pakistani Services</title>
     <link rel="shortcut icon" href="./images/wapda/ebillpk-logo.png" type="image/x-icon">
@@ -10,6 +15,7 @@
     include "./components/other-meta-links/meta-links.php";
     ?>
 </head>
+
 <body>
     <!-- Navigation -->
     <?php
@@ -28,4 +34,5 @@
     include "./components/bootstrap/bootstrap-javascript-foot.php";
     ?>
 </body>
+
 </html>

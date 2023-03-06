@@ -1,6 +1,8 @@
 <?php
 // Logout if Already Logged
-include "./destroy-session/destroy-session.php"
+include "./destroy-session/destroy-session.php";
+include "./connection/connection.php";
+include "./web-crawler/web-crawler.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -1,5 +1,7 @@
     <?php
     include "./components/dashboard-meta-add/meta-add-modal.php";
+    $getUsersData = "SELECT * FROM our_visitors";
+    $userDetailQueryRun = mysqli_query($conn, $getUsersData) or die("Rows Cant Count");
     ?>
     <section class="container" style="height: calc(100vh - 250px); overflow-x:auto">
         <div class="row">
@@ -27,20 +29,47 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
-                    </tr>
+                    <?php
+                    if (mysqli_num_rows($userDetailQueryRun) > 0) {
+                        while ($singleVisits = mysqli_fetch_assoc($userDetailQueryRun)) {
+                    ?>
+                            <tr>
+                                <td>
+                                    <?php
+                                    echo $singleVisits['ip'];
+                                    ?>
+                                </td>
+                                <td>
+                                    <?php
+                                    echo $singleVisits['current_page'];
+                                    ?>
+                                </td>
+                                <td>
+                                    <?php
+                                    echo $singleVisits['referrer'];
+                                    ?>
+                                </td>
+                                <td>
+                                    <?php
+                                    echo $singleVisits['imp_time'];
+                                    ?>
+                                </td>
+                                <td>
+                                    <?php
+                                    echo $singleVisits['user_agent'];
+                                    ?>
+                                </td>
+                                <td>
+                                    <?php
+                                    echo $singleVisits['total_visits'];
+                                    ?>
+                                </td>
+
+                            </tr>
+                    <?php
+                        }
+                    }
+                    ?>
                 </tbody>
             </table>
         </div>

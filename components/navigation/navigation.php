@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
   <div class="container">
-    <a class="navbar-brand nav-a" href="index">E Billing</a>
+    <a class="navbar-brand nav-a" href="index">EBILLPK</a>
     <div class="social-media order-lg-last">
       <p class="mb-0 d-flex">
         <a href="#" class="d-flex align-items-center justify-content-center nav-a"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
