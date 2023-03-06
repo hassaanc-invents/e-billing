@@ -54,7 +54,7 @@ $totalPageData =  GetPageData($conn, $pageId);
         </div>
     </div>
     <!-- Mepco Frontend -->
-    <div class="container">
+    <div class="container py-3">
         <?php
         echo $totalPageData[5];
         ?>

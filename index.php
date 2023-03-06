@@ -22,8 +22,6 @@ $totalPageData =  GetPageData($conn, $pageId);
     ?>
     <!-- Local Link -->
     <link rel="stylesheet" href="./style/navigation.css">
-    <link rel="stylesheet" href="./style/main-section.css">
-    <link rel="stylesheet" href="./style/main-page-cards.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -50,7 +48,7 @@ $totalPageData =  GetPageData($conn, $pageId);
                 <div class="card">
                     <div class="card-content">
                         <center>
-                            <img class="mt-2" src="./images/wapda/mepco-logo.png" style="width: 60%; height: auto" alt="<?php echo $totalPageData[4]; ?>">
+                            <img class="mt-2" src="./images/wapda/mepco-logo.png" style="width: 150px; height: 140px" alt="<?php echo $totalPageData[4]; ?>">
                         </center>
                         <div class="card-body">
                             <h5>Mepco</h5>
@@ -66,7 +64,7 @@ $totalPageData =  GetPageData($conn, $pageId);
         </div>
     </section>
     <!-- Home Page Blog -->
-    <div class="container">
+    <div class="container py-3">
         <?php
         echo $totalPageData[5];
         ?>

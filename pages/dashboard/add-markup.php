@@ -23,7 +23,6 @@ if (isset($_POST['add-markup'])) {
         ?>
         <!-- Local Link -->
         <link rel="stylesheet" href="../../style/navigation.css">
-        <!-- <link rel="stylesheet" href="../../style/add-meta-section.css"> -->
     </head>
 
     <body>
