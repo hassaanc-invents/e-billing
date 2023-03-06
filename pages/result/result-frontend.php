@@ -1,5 +1,4 @@
 <?php
-include "./connection/connection.php";
 if (isset($_GET['referenceNumber'])) {
     session_start();
 ?>
