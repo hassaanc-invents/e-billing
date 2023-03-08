@@ -2,7 +2,7 @@
 include "./connection/connection.php";
 include "./get-page-data/get-page-data.php";
 include "./web-crawler/web-crawler.php";
-$pageId = "001";
+$pageId = "004";
 $totalPageData =  GetPageData($conn, $pageId);
 ?>
 <!DOCTYPE html>
@@ -23,6 +23,7 @@ $totalPageData =  GetPageData($conn, $pageId);
     <!-- Local Link -->
     <link rel="stylesheet" href="./style/navigation.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <?php
@@ -48,7 +49,7 @@ $totalPageData =  GetPageData($conn, $pageId);
                 <div class="card">
                     <div class="card-content">
                         <center>
-                            <img class="mt-2" src="./images/wapda/mepco-logo.png" style="width: 150px; height: 140px" alt="<?php echo $totalPageData[4]; ?>">
+                            <img class="mt-2" src="./images/wapda/mepco-logo.png" style="width: 150px; height: 140px" alt="mepco">
                         </center>
                         <div class="card-body">
                             <h5>Mepco</h5>
@@ -56,6 +57,23 @@ $totalPageData =  GetPageData($conn, $pageId);
                             <span class="card-text">Punjab, Pakistan</span>
                             <div class="card-btns d-flex justify-content-end mt-2">
                                 <a href="mepco" class="btn btn-dark waves-effect waves-light px-5">Check Bill</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fesco Card -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card">
+                    <div class="card-content">
+                        <center>
+                            <img class="mt-2" src="./images/wapda/fesco-logo.jpg" style="width: 150px; height: 140px" alt="fesco">
+                        </center>
+                        <div class="card-body">
+                            <h5>FESCO</h5>
+                            <p class="card-text  mb-0">Faisalabad Electric Supply Company</p>
+                            <div class="card-btns d-flex justify-content-end mt-2">
+                                <a href="fesco" class="btn btn-dark waves-effect waves-light px-5">Check Bill</a>
                             </div>
                         </div>
                     </div>
