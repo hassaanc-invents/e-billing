@@ -21,6 +21,7 @@ if (isset($_POST['submit'])) {
     $_SESSION['dueDate'] = strip_tags($dueDate[0][0]);
     $_SESSION['refNumber'] = strip_tags($completeRefNumber[0][0]);
     $_SESSION['latePayment'] = $_SESSION['payableAfterDate'] - $_SESSION['payableInDate'];
+    $_SESSION['redirected_url'] = $content;
     header("Location: $baseURL/result?referenceNumber=$referenceNumber&company=mepco");
 } else {
     header("Location: $baseURL/result");
