@@ -59,7 +59,7 @@ if (isset($_GET['referenceNumber'])) {
                             </table>
 
                             <div class="col-sm-4 offset-sm-8">
-                                <button type="submit" class="btn btn-success btn-block mt-4" id="checkBill">Genrate PDF</button>
+                                <a href="<?php echo $_SESSION['redirected_url']?>" target="_blank" class="btn btn-success btn-block mt-4" id="checkBill">Genrate PDF</a>
                             </div>
                         </div>
                     </div>
